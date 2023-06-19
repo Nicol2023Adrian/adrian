@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reproductor de Audio con Imagen Giratoria</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f1f1f1;
+    }
+
+    #reproductor {
+      text-align: center;
+    }
+
+    .imagen-circular {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    .imagen-circular img {
+      width: 100%;
+      height: auto;
+    }
+
+    #imagen {
+      animation: spin 8s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+  </style>
+</head>
+<body>
+  <div id="reproductor">
+    <img id="Imagen" src="Audio e imagenes/portada.png" alt="imagen circular">
+<br>
+    <audio controls src="Audio e imagenes/X2Download.app - Otro Atardecer (128 kbps).mp3"></audio>
+</div>
+</body>
+</html>
+
